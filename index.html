@@ -7,6 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
 <style>
+@font-face{font-family:'KoPubWorld Dotum';src:url(fonts/KoPubWorldDotumProLight.otf) format('opentype');font-weight:300;font-display:swap}
+@font-face{font-family:'KoPubWorld Dotum';src:url(fonts/KoPubWorldDotumProMedium.otf) format('opentype');font-weight:500;font-display:swap}
+@font-face{font-family:'KoPubWorld Dotum';src:url(fonts/KoPubWorldDotumProBold.otf) format('opentype');font-weight:700;font-display:swap}
 html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 #stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
 #stage section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;display:none !important}
@@ -14,14 +17,14 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 #stage h1,#stage h2,#stage h3,#stage p,#stage ul{margin:0}
 #stage ul{padding-left:1.2em}
 #stage div{box-sizing:border-box}
-#nav{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:center;align-items:center;gap:16px;font:16px 'Noto Sans KR',sans-serif;color:#C9CED8}
+#nav{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:center;align-items:center;gap:16px;font:500 16px 'KoPubWorld Dotum','Noto Sans KR',sans-serif;color:#C9CED8}
 #nav button{font:inherit;color:#F4F5F7;background:#2B2B2B;border:1px solid #4D4D4D;border-radius:8px;padding:8px 18px;min-height:44px;cursor:pointer}
 #nav button:hover{background:#3A3A3A}
 </style>
 </head>
 <body>
 <main id="stage">
-<section id="cover" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<section id="cover" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
 <p style="font-size:30px;font-weight:700;color:#7FB0FF">맥북 기본 앱으로 하는 일정 관리</p>
 <div style="display:flex;flex-direction:column;gap:40px">
 <h1 style="font-size:96px;font-weight:800;line-height:1.15">미리 알림 앱<br>활용 가이드</h1>
@@ -29,7 +32,7 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 </div>
 <p style="font-size:24px;color:#9AA1AE">2026년 11월</p>
 </section>
-<section id="screen" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<section id="screen" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
 <h2 style="font-size:64px;font-weight:800;line-height:1.1">화면 구성 1: 「오늘」 화면</h2>
 <img src="images/screen-today.png" alt="미리 알림 앱의 오늘 화면에 1번부터 9번까지 번호를 표시한 그림" style="position:absolute;left:128px;top:248px;width:1000px;height:510px;object-fit:contain;border:1px solid #4D4D4D;border-radius:16px">
 <div style="position:absolute;left:857px;top:236px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div>
@@ -56,7 +59,7 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 <p style="font-size:30px;line-height:1.45"><b><span style="color:#FFD60A">먼저 할 일</span></b>  9번 배너에서 시스템 설정으로 이동해 알림을 허용해야 제시간에 알림이 옵니다</p>
 </div>
 </section>
-<section id="screen2" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<section id="screen2" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
 <h2 style="font-size:64px;font-weight:800;line-height:1.1">화면 구성 2: 「예정」 화면</h2>
 <img src="images/screen-scheduled.png" alt="미리 알림 앱의 예정 화면에 1번부터 8번까지 번호를 표시한 그림" style="position:absolute;left:128px;top:248px;width:552px;height:700px;object-fit:contain;border:1px solid #4D4D4D;border-radius:16px">
 <div style="position:absolute;left:347px;top:644px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div>
@@ -83,7 +86,7 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 <p style="font-size:24px;line-height:1.5">8번 목록은 3~5개만 유지하면 분류가 쉽습니다</p>
 </div>
 </section>
-<section id="steps" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<section id="steps" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
 <h2 style="font-size:64px;font-weight:800;line-height:1.1">작업 순서 5단계</h2>
 <div style="display:flex;gap:24px;align-items:stretch">
 <div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
@@ -139,7 +142,7 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 </div>
 <p style="font-size:30px;font-weight:500;line-height:1.45;color:#C9CED8">입력은 빠르게, 정리는 하루 한 번, 점검은 주 한 번</p>
 </section>
-<section id="best" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<section id="best" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
 <p style="font-size:30px;font-weight:700;color:#FFD60A">가장 효과적인 활용법</p>
 <h2 style="font-size:96px;font-weight:800;line-height:1.2">모든 할 일에 날짜를 붙이고,<br>매일 <span style="color:#FFD60A">「오늘」</span>만 봅니다</h2>
 <div style="display:flex;gap:48px">
@@ -157,7 +160,7 @@ html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
 </div>
 </div>
 </section>
-<section id="pros" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<section id="pros" style="background:#1A1A1A;color:#F4F5F7;font-family:'KoPubWorld Dotum', 'Noto Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
 <h2 style="font-size:64px;font-weight:800;line-height:1.1">장점과 알아둘 점</h2>
 <div style="display:flex;gap:32px;align-items:stretch">
 <div style="flex:1;display:flex;flex-direction:column;gap:24px;background:#2B2B2B;padding:44px 48px;border:1px solid #4D4D4D;border-radius:16px">
