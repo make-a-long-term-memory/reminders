@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>맥북 미리 알림 앱 활용 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#0D0D0D;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+#stage section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden;display:none !important}
+#stage section.on{display:flex !important}
+#stage h1,#stage h2,#stage h3,#stage p,#stage ul{margin:0}
+#stage ul{padding-left:1.2em}
+#stage div{box-sizing:border-box}
+#nav{position:fixed;left:0;right:0;bottom:12px;display:flex;justify-content:center;align-items:center;gap:16px;font:16px 'Noto Sans KR',sans-serif;color:#C9CED8}
+#nav button{font:inherit;color:#F4F5F7;background:#2B2B2B;border:1px solid #4D4D4D;border-radius:8px;padding:8px 18px;min-height:44px;cursor:pointer}
+#nav button:hover{background:#3A3A3A}
+</style>
+</head>
+<body>
+<main id="stage">
+<section id="cover" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:30px;font-weight:700;color:#7FB0FF">맥북 기본 앱으로 하는 일정 관리</p>
+<div style="display:flex;flex-direction:column;gap:40px">
+<h1 style="font-size:96px;font-weight:800;line-height:1.15">미리 알림 앱<br>활용 가이드</h1>
+<p style="font-size:40px;font-weight:500;line-height:1.4;color:#C9CED8">화면 구성부터 작업 순서, 가장 효과적인 사용법까지</p>
+</div>
+<p style="font-size:24px;color:#9AA1AE">2026년 11월</p>
+</section>
+<section id="screen" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<h2 style="font-size:64px;font-weight:800;line-height:1.1">화면 구성 1: 「오늘」 화면</h2>
+<img src="images/screen-today.png" alt="미리 알림 앱의 오늘 화면에 1번부터 9번까지 번호를 표시한 그림" style="position:absolute;left:128px;top:248px;width:1000px;height:510px;object-fit:contain;border:1px solid #4D4D4D;border-radius:16px">
+<div style="position:absolute;left:857px;top:236px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div>
+<div style="position:absolute;left:269px;top:287px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">2</p></div>
+<div style="position:absolute;left:269px;top:353px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">3</p></div>
+<div style="position:absolute;left:269px;top:419px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">4</p></div>
+<div style="position:absolute;left:269px;top:485px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">5</p></div>
+<div style="position:absolute;left:269px;top:551px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">6</p></div>
+<div style="position:absolute;left:269px;top:617px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">7</p></div>
+<div style="position:absolute;left:491px;top:358px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">8</p></div>
+<div style="position:absolute;left:384px;top:697px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">9</p></div>
+<div style="position:absolute;left:1192px;top:248px;width:600px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div><p style="font-size:24px;line-height:1.45"><b>+ 버튼</b> 새 미리 알림 추가</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">2</p></div><p style="font-size:24px;line-height:1.45"><b>오늘</b> 오늘 마감인 항목</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">3</p></div><p style="font-size:24px;line-height:1.45"><b>예정</b> 날짜순 전체 일정</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">4</p></div><p style="font-size:24px;line-height:1.45"><b>전체</b> 모든 목록의 항목</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">5</p></div><p style="font-size:24px;line-height:1.45"><b>깃발 표시</b> 중요 항목 모음</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">6</p></div><p style="font-size:24px;line-height:1.45"><b>긴급</b> 긴급으로 지정한 항목</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">7</p></div><p style="font-size:24px;line-height:1.45"><b>완료됨</b> 끝낸 일의 기록</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">8</p></div><p style="font-size:24px;line-height:1.45"><b>오전·오후·오늘 밤</b> 시간대별 구간</p></div>
+<div style="display:flex;gap:16px;align-items:center"><div style="width:40px;height:40px;background:#FFD60A;border-radius:20px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">9</p></div><p style="font-size:24px;line-height:1.45"><b>알림 안내 배너</b> 알림이 꺼져 있다는 경고</p></div>
+</div>
+<div style="position:absolute;left:128px;top:806px;width:1664px;display:flex;flex-direction:column;background:#2B2B2B;border:1px solid #FFD60A;color:#F4F5F7;padding:28px 36px;border-radius:16px">
+<p style="font-size:30px;line-height:1.45"><b><span style="color:#FFD60A">먼저 할 일</span></b>  9번 배너에서 시스템 설정으로 이동해 알림을 허용해야 제시간에 알림이 옵니다</p>
+</div>
+</section>
+<section id="screen2" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<h2 style="font-size:64px;font-weight:800;line-height:1.1">화면 구성 2: 「예정」 화면</h2>
+<img src="images/screen-scheduled.png" alt="미리 알림 앱의 예정 화면에 1번부터 8번까지 번호를 표시한 그림" style="position:absolute;left:128px;top:248px;width:552px;height:700px;object-fit:contain;border:1px solid #4D4D4D;border-radius:16px">
+<div style="position:absolute;left:347px;top:644px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div>
+<div style="position:absolute;left:240px;top:333px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">2</p></div>
+<div style="position:absolute;left:421px;top:309px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">3</p></div>
+<div style="position:absolute;left:430px;top:367px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">4</p></div>
+<div style="position:absolute;left:451px;top:455px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">5</p></div>
+<div style="position:absolute;left:472px;top:707px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">6</p></div>
+<div style="position:absolute;left:265px;top:729px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">7</p></div>
+<div style="position:absolute;left:240px;top:843px;width:48px;height:48px;background:#FFD60A;border:3px solid #1A1A1A;border-radius:24px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">8</p></div>
+<div style="position:absolute;left:760px;top:248px;width:1032px;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">1</p></div><p style="font-size:30px;line-height:1.45"><b>알림 꺼짐 경고</b> 파란 버튼으로 알림 허용</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">2</p></div><p style="font-size:30px;line-height:1.45"><b>예정</b> 지금 보고 있는 보관함</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">3</p></div><p style="font-size:30px;line-height:1.45"><b>7개 완료됨</b> 이미 끝낸 항목 수</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">4</p></div><p style="font-size:30px;line-height:1.45"><b>점선 동그라미</b> 눌러서 오늘 일정 바로 입력</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">5</p></div><p style="font-size:30px;line-height:1.45"><b>내일~11월 16일</b> 앞으로 일주일은 날짜별 칸</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">6</p></div><p style="font-size:30px;line-height:1.45"><b>12월~2027년</b> 그 이후는 월별 칸</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">7</p></div><p style="font-size:30px;line-height:1.45"><b>목록 제안</b> 자동 분류되는 장보기 목록 만들기</p></div>
+<div style="display:flex;gap:18px;align-items:center"><div style="width:44px;height:44px;background:#FFD60A;border-radius:22px;display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:800;color:#1A1A1A">8</p></div><p style="font-size:30px;line-height:1.45"><b>나의 목록</b> 직접 만든 FAMILY, MIRIM 등</p></div>
+</div>
+<div style="position:absolute;left:760px;top:760px;width:1032px;display:flex;flex-direction:column;gap:8px;background:#2B2B2B;border:1px solid #FFD60A;padding:28px 36px;border-radius:16px">
+<p style="font-size:30px;font-weight:700;color:#FFD60A">활용 팁</p>
+<p style="font-size:24px;line-height:1.5">1번에서 알림 허용 → 4번으로 바로 입력 → 5·6번으로 다음 주 점검</p>
+<p style="font-size:24px;line-height:1.5">8번 목록은 3~5개만 유지하면 분류가 쉽습니다</p>
+</div>
+</section>
+<section id="steps" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<h2 style="font-size:64px;font-weight:800;line-height:1.1">작업 순서 5단계</h2>
+<div style="display:flex;gap:24px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
+<p style="font-size:64px;font-weight:800;line-height:1.1;color:#FFD60A">1</p>
+<h3 style="font-size:40px;font-weight:700">준비</h3>
+<p style="font-size:24px;color:#C9CED8">처음 한 번</p>
+<ul style="font-size:24px;line-height:1.6">
+<li>알림 허용</li>
+<li>iCloud 동기화</li>
+<li>목록은 3~5개</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
+<p style="font-size:64px;font-weight:800;line-height:1.1;color:#FFD60A">2</p>
+<h3 style="font-size:40px;font-weight:700">입력</h3>
+<p style="font-size:24px;color:#C9CED8">생각날 때 바로</p>
+<ul style="font-size:24px;line-height:1.6">
+<li>제목만 먼저</li>
+<li>행동으로 쓰기</li>
+<li>날짜·시간 함께</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
+<p style="font-size:64px;font-weight:800;line-height:1.1;color:#FFD60A">3</p>
+<h3 style="font-size:40px;font-weight:700">정리</h3>
+<p style="font-size:24px;color:#C9CED8">하루 한 번 5분</p>
+<ul style="font-size:24px;line-height:1.6">
+<li>마감일 넣기</li>
+<li>하위 작업 나누기</li>
+<li>반복 설정</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
+<p style="font-size:64px;font-weight:800;line-height:1.1;color:#FFD60A">4</p>
+<h3 style="font-size:40px;font-weight:700">실행</h3>
+<p style="font-size:24px;color:#C9CED8">하루 중</p>
+<ul style="font-size:24px;line-height:1.6">
+<li>「오늘」만 보기</li>
+<li>못 하면 미루기</li>
+<li>끝나면 완료 체크</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#2B2B2B;padding:32px 28px;border:1px solid #4D4D4D;border-radius:16px">
+<p style="font-size:64px;font-weight:800;line-height:1.1;color:#FFD60A">5</p>
+<h3 style="font-size:40px;font-weight:700">점검</h3>
+<p style="font-size:24px;color:#C9CED8">주 1회</p>
+<ul style="font-size:24px;line-height:1.6">
+<li>다음 주 훑기</li>
+<li>밀린 일 재배정</li>
+<li>완료 기록 확인</li>
+</ul>
+</div>
+</div>
+<p style="font-size:30px;font-weight:500;line-height:1.45;color:#C9CED8">입력은 빠르게, 정리는 하루 한 번, 점검은 주 한 번</p>
+</section>
+<section id="best" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:30px;font-weight:700;color:#FFD60A">가장 효과적인 활용법</p>
+<h2 style="font-size:96px;font-weight:800;line-height:1.2">모든 할 일에 날짜를 붙이고,<br>매일 <span style="color:#FFD60A">「오늘」</span>만 봅니다</h2>
+<div style="display:flex;gap:48px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:40px;font-weight:700">입력할 때</h3>
+<p style="font-size:30px;line-height:1.45;color:#C9CED8">날짜와 시간까지 한 문장으로 적기</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:40px;font-weight:700">아침마다</h3>
+<p style="font-size:30px;line-height:1.45;color:#C9CED8">「오늘」을 열어 그날 할 일만 확인</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-size:40px;font-weight:700">못 한 일은</h3>
+<p style="font-size:30px;line-height:1.45;color:#C9CED8">그 자리에서 다른 날짜로 옮기기</p>
+</div>
+</div>
+</section>
+<section id="pros" style="background:#1A1A1A;color:#F4F5F7;font-family:'Noto Sans KR', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<h2 style="font-size:64px;font-weight:800;line-height:1.1">장점과 알아둘 점</h2>
+<div style="display:flex;gap:32px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:24px;background:#2B2B2B;padding:44px 48px;border:1px solid #4D4D4D;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#FFD60A">미리 알림만의 장점</h3>
+<ul style="font-size:30px;line-height:1.6">
+<li>애플 기기 간 자동 동기화</li>
+<li>Siri로 말해서 바로 등록</li>
+<li>장소·사람 기준으로도 알림</li>
+<li>메일·메모·캘린더와 연결</li>
+<li>모든 기능 무료, 광고 없음</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px;background:#2B2B2B;padding:44px 48px;border:1px solid #4D4D4D;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#7FB0FF">구글 캘린더 연동</h3>
+<ul style="font-size:30px;line-height:1.6">
+<li>직접 연동은 지원되지 않음</li>
+<li>맥 캘린더 앱에 구글 계정을 추가하면 한 화면에서 함께 보기 가능 (무료)</li>
+<li>구글 쪽에도 보이려면 동기화 앱 필요 (유료)</li>
+<li>안드로이드·윈도우는 웹으로만 사용</li>
+</ul>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#9AA1AE">연동 정보는 2026년 11월 검색 기준</p>
+</section>
+</main>
+<nav id="nav" aria-label="슬라이드 이동">
+<button id="prev" type="button">이전</button>
+<span id="count" aria-live="polite"></span>
+<button id="next" type="button">다음</button>
+</nav>
+<script>
+(function(){
+var stage=document.getElementById('stage');
+var slides=[].slice.call(stage.querySelectorAll('section'));
+var i=0;
+function fit(){
+var s=Math.min(window.innerWidth/1920,(window.innerHeight-72)/1080);
+stage.style.transform='scale('+s+')';
+stage.style.marginLeft=(-960*s)+'px';
+stage.style.marginTop=(-540*s-30)+'px';
+}
+function show(n){
+i=Math.max(0,Math.min(slides.length-1,n));
+slides.forEach(function(el,k){el.classList.toggle('on',k===i);});
+document.getElementById('count').textContent=(i+1)+' / '+slides.length;
+try{history.replaceState(null,'','#'+(i+1));}catch(e){}
+}
+document.getElementById('prev').onclick=function(){show(i-1);};
+document.getElementById('next').onclick=function(){show(i+1);};
+document.addEventListener('keydown',function(e){
+if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){show(i+1);}
+if(e.key==='ArrowLeft'||e.key==='PageUp'){show(i-1);}
+});
+window.addEventListener('resize',fit);
+fit();
+show((parseInt(location.hash.slice(1),10)||1)-1);
+})();
+</script>
+</body>
+</html>
